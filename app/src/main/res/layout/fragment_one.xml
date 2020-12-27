@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentOne">
+
+
+    <Button
+        android:id="@+id/goToFragmentTwoButton"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:text="Go To Fragment Two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNumbersFragmentOne"
+        app:layout_constraintVertical_bias="0.775" />
+
+    <EditText
+        android:id="@+id/enterFirstNumberFragmentOne"
+        android:inputType="number"
+        android:layout_width="204dp"
+        android:layout_height="63dp"
+        android:hint="ENTER FIRST NUMBER"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/enterSecondNumberFragmentOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displaySumFragmentOne"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <EditText
+        android:id="@+id/enterSecondNumberFragmentOne"
+        android:inputType="number"
+        android:layout_width="202dp"
+        android:layout_height="63dp"
+        android:hint="ENTER SECOND NUMBER"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/addNumbersFragmentOne"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:text="Add Numbers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <TextView
+        android:id="@+id/displaySumFragmentOne"
+        android:layout_width="192dp"
+        android:layout_height="62dp"
+        android:background="#9BD68E"
+        android:gravity="center"
+        android:text="SUM"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+</androidx.constraintlayout.widget.ConstraintLayout>

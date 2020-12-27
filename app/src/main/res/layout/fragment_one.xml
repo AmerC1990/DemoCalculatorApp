@@ -8,34 +8,24 @@
     tools:context=".FragmentOne">
 
 
-    <Button
-        android:id="@+id/goToFragmentTwoButton"
-        android:layout_width="347dp"
-        android:layout_height="50dp"
-        android:text="Go To Fragment Two"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNumbersFragmentOne"
-        app:layout_constraintVertical_bias="0.775" />
-
     <EditText
         android:id="@+id/enterFirstNumberFragmentOne"
-        android:inputType="number"
         android:layout_width="204dp"
         android:layout_height="63dp"
         android:hint="ENTER FIRST NUMBER"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/enterSecondNumberFragmentOne"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/displaySumFragmentOne"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.839" />
 
     <EditText
         android:id="@+id/enterSecondNumberFragmentOne"
         android:inputType="number"
-        android:layout_width="202dp"
+        android:layout_width="204dp"
         android:layout_height="63dp"
         android:hint="ENTER SECOND NUMBER"
         android:textAlignment="center"
@@ -63,6 +53,7 @@
         android:background="#9BD68E"
         android:gravity="center"
         android:text="SUM"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

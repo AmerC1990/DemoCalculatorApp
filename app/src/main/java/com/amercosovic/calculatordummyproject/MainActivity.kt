@@ -11,7 +11,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val fragmentOne = FragmentOne()
+        val fragmentTwo = FragmentTwo()
         makeCurrentFragment(fragmentOne)
+
+        val changeFragmentButton = findViewById<Button>(R.id.changeFragmentButton)
+        changeFragmentButton.setOnClickListener {
+            if (fragmentOne.isVisible) {
+                makeCurrentFragment(fragmentTwo)
+            }
+            else {
+                makeCurrentFragment(fragmentOne)
+            }
+        }
+
 
     }
 

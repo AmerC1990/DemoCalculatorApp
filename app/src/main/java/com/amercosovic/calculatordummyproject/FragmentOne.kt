@@ -18,7 +18,6 @@ class FragmentOne : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val inflater = inflater.inflate(R.layout.fragment_one, container, false)
-        val fragmentTwo = FragmentTwo()
         val addNumbers = inflater.findViewById<Button>(R.id.addNumbersFragmentOne)
         addNumbers.setOnClickListener {
             val firstNumber = inflater.findViewById<EditText>(R.id.enterFirstNumberFragmentOne)
@@ -28,24 +27,8 @@ class FragmentOne : Fragment() {
                 val sum = firstNumber.text.toString().toInt() + secondNumber.text.toString().toInt()
                 sumTextView.text = sum.toString()
             }
-
-        }
-        val goToFragmentTwo = inflater.findViewById<Button>(R.id.goToFragmentTwoButton)
-        goToFragmentTwo.setOnClickListener {
-            makeCurrentFragment(fragmentTwo)
         }
         return inflater
     }
-
-    private fun makeCurrentFragment(fragment: Fragment) {
-        fragmentManager?.beginTransaction()?.apply {
-            replace(R.id.fragmentContainer, fragment)
-            commit()
-        }
-    }
-
-
-
-
 
 }
